@@ -177,6 +177,10 @@ button {
     border: 1px solid rgb(0, 0, 0);
     color: rgb(0, 0, 0);
   }
+  .button--white:hover {
+    background-color: #000;
+    color: #fff;
+  }
 }
 .header {
   position: fixed;
