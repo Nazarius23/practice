@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+*::before,
+*::after {
+	display: inline-block;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+img {
+	vertical-align: top;
+}
+ul li {
+	list-style: none;
+}
+button {
+	background-color: transparent;
+	cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: inherit;
+	font-style: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+}
+html,
+body {
+	block-size: 100%;
+}
+input,
+textarea,
+select,
+button {
+	box-sizing: border-box; /* коректні розміри з padding/border */
+	font: inherit; /* наслідуємо шрифт від батька */
+	color: inherit;
+	background: transparent; /* прибирає нативний фон */
+	border: none; /* прибирає нативний border (візуалку добавиш сам) */
+	padding: 0; /* нульова базова відступка */
+	margin: 0;
+	outline: none; /* outline контролюємо самі (див. фокус нижче) */
+
+	-webkit-appearance: none; /* скидання в Safari/Chrome */
+	-moz-appearance: none; /* скидання в Firefox */
+	appearance: none;
+}

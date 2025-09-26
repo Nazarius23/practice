@@ -1,0 +1,152 @@
+.footer {
+	padding-bottom: 20px;
+	&__container {
+		background-color: #000;
+		color: #fff;
+		border-radius: 1rem;
+		overflow: clip;
+
+		padding-block-start: 3rem;
+		padding-block-end: 1.5rem;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+
+		row-gap: 3rem;
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		gap: 32px;
+
+		@media (max-width: 767.98px) {
+			flex-direction: column;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+
+		@media (min-width: 767.98px) {
+			flex: 1 1 calc(52.5% - 32px);
+		}
+	}
+
+	&__logo {
+		margin-bottom: 1rem;
+	}
+
+	&__text {
+		margin-bottom: 2rem;
+	}
+
+	&__menu {
+	}
+
+	&__form {
+		@media (min-width: 767.98px) {
+			flex: 1 1 calc(32.8% - 32px);
+		}
+	}
+
+	&__bottom {
+	}
+}
+.menu-footer {
+	&__body {
+		max-width: 24.375rem;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 15px;
+
+		@media (max-width: 424.98px) {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+
+	&__item {
+	}
+
+	&__link {
+		@media (min-width: 767.98px) {
+			transition: scale 0.3s ease-in-out;
+			&:hover {
+				scale: 1.2;
+			}
+		}
+	}
+}
+.form-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	&__label {
+		font-size: 1.25rem;
+	}
+
+	&__wrapper {
+		display: flex;
+
+		gap: 16px;
+
+		@media (max-width: 595.98px) {
+			flex-direction: column;
+		}
+	}
+
+	&__input {
+		border: 1px solid rgba(255, 255, 255, 1);
+		border-radius: 50px;
+		box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+		padding: 12px 20px;
+
+		flex: 1 1 2.8125rem;
+		&::placeholder {
+			color: #fff;
+		}
+	}
+
+	&__button {
+	}
+}
+
+.bottom-footer {
+	display: flex;
+	justify-content: space-between;
+
+	padding-top: 32px;
+	border-top: 1px solid rgba(79, 79, 83, 1);
+	gap: 16px;
+
+	@media (max-width: 767.98px) {
+		flex-direction: column-reverse;
+	}
+	&__text {
+	}
+
+	&__list {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	&__items {
+		@media (min-width: 767.98px) {
+			transition: scale 0.3s ease-in-out;
+			&:hover {
+				scale: 1.2;
+			}
+		}
+	}
+}
