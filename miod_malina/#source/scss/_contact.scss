@@ -32,9 +32,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap: 2.758621svh; /* 16px/580 */
+		gap: 2.586207svh; /* 15px/580 */
 
 		transition: scale 0.3s ease-in-out;
+
 		@media (any-hover: hover) {
 			&:hover {
 				scale: 1.1;
@@ -45,33 +46,7 @@
 	&__social {
 	}
 }
-.link-phone {
-	&::before {
-		content: '';
-		background-image: url(.//img/contact/phone.svg);
-		background-repeat: no-repeat;
-		width: 24px;
-		height: 24px;
-	}
-}
-.link-email {
-	&::before {
-		content: '';
-		background-image: url(.//img/contact/emaill.svg);
-		background-repeat: no-repeat;
-		width: 24px;
-		height: 24px;
-	}
-}
-.link-location {
-	&::before {
-		content: '';
-		background-image: url(.//img/contact/global.svg);
-		background-repeat: no-repeat;
-		width: 24px;
-		height: 24px;
-	}
-}
+
 .header-block {
 	&__title {
 	}
