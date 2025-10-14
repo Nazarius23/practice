@@ -485,7 +485,7 @@ h6 {
 }
 .link-phone::before {
   content: "";
-  background-image: url(/img/contact/phone.svg);
+  background-image: url(//img/contact/phone.svg);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -493,7 +493,7 @@ h6 {
 
 .link-email::before {
   content: "";
-  background-image: url(/img/contact/emaill.svg);
+  background-image: url(//img/contact/emaill.svg);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -501,7 +501,7 @@ h6 {
 
 .link-location::before {
   content: "";
-  background-image: url(/img/contact/global.svg);
+  background-image: url(//img/contact/global.svg);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
