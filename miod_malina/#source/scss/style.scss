@@ -1,0 +1,39 @@
+//===================================================
+
+@import '_reset';
+@import '_fonts';
+@import '_components';
+@import '_header';
+@import '_hero';
+@import '_about';
+@import '_attractions';
+@import '_amenities';
+@import '_contact';
+@import '_footer';
+
+//===================================================
+
+body {
+	//----------------підключення шрифту--------------
+	font-family: 'Source Sans Pro', sans-serif;
+	//----------------налаштування шрифту-------------
+	font-size: 1.25rem;
+	@media (max-width: 424.98px) {
+		font-size: 18px;
+	}
+	color: rgba(9, 9, 9, 1);
+	background-color: #fff;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+// ==============Обмежуючий контейнер==============
+
+[class*='__container'] {
+	max-width: 1054px;
+	padding-inline: 15px;
+	margin-inline: auto;
+}
+// ===============================================

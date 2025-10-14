@@ -1,0 +1,39 @@
+.page {
+	&__about {
+		margin-block: 13.195876svh; /* 64px/485 */
+	}
+}
+.about {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		row-gap: 32px;
+	}
+
+	&__header-block {
+	}
+
+	&__text {
+		max-width: 598px;
+		& p {
+			text-align: center;
+			line-height: 1.5; /* 30px/20 */
+			letter-spacing: 1px;
+		}
+	}
+
+	&__button {
+	}
+}
+.header-block {
+	&__title {
+	}
+
+	&__subtitle {
+	}
+
+	&__line {
+	}
+}
