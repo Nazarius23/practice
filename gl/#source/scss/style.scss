@@ -1,0 +1,33 @@
+//===================================================
+@import '_fonts';
+@import '_reset';
+@import '_components';
+@import '_header';
+@import '_hero';
+@import '_footer';
+
+//===================================================
+
+body {
+	//----------------підключення шрифту--------------
+	font-family: 'FixelText', sans-serif;
+	//----------------налаштування шрифту-------------
+	font-size: 1.25rem;
+	color: rgba(51, 51, 51, 1);
+	background-color: #fff;
+	font-weight: 600;
+	line-height: 1.2;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+// ==============Обмежуючий контейнер==============
+
+[class*='__container'] {
+	max-width: 1670px;
+	padding-inline: 15px;
+	margin-inline: auto;
+}
+// ===============================================

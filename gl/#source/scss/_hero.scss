@@ -1,0 +1,75 @@
+.page {
+	&__hero {
+	}
+}
+.hero {
+	&__container {
+		position: relative;
+	}
+
+	&__wrapper {
+		position: relative;
+		z-index: 3;
+
+		display: flex;
+		align-items: center;
+
+		padding: 213px 0 0 59px;
+		color: rgba(255, 255, 255, 1);
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		z-index: 2;
+
+		flex: 0 1 69%; /* 928/1582 */
+	}
+
+	&__lable {
+		font-weight: 400;
+	}
+
+	&__title {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__text {
+		max-width: 780px;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1.5;
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__button {
+		align-self: flex-start;
+	}
+
+	&__image {
+		flex: 0 1 55.436157%;
+		margin-left: -14%;
+
+		img {
+			object-fit: cover;
+			aspect-ratio: 877 / 595;
+		}
+	}
+
+	&__nav {
+	}
+
+	&__banner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 30px;
+	}
+}
