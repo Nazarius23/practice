@@ -1,4 +1,6 @@
 .header {
+	position: relative;
+	z-index: 50;
 	&__container {
 		display: grid;
 		align-items: center;
