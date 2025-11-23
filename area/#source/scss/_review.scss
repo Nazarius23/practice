@@ -1,0 +1,78 @@
+.page {
+	&__review {
+		margin-bottom: 165px;
+	}
+}
+.review {
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+		column-gap: 20px;
+		@media (max-width: 767.98px) {
+			grid-template-columns: auto;
+		}
+	}
+
+	&__body {
+		display: flex;
+		border-top: 1px solid $gray-color;
+	}
+	&__wrapper {
+		padding-top: 42px;
+		padding-left: clamp(20px, 2vw, 50px);
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		row-gap: 50px;
+		@media (max-width: 767.98px) {
+			padding: 40px 16px 0;
+		}
+	}
+	&__testimonial {
+	}
+
+	&__quote {
+		font-family: 'Crimson Text';
+		font-size: 40px;
+		letter-spacing: -1.4px;
+		@media (max-width: 424.98px) {
+			font-size: 35px;
+		}
+	}
+
+	&__author {
+		display: flex;
+		align-items: center;
+		column-gap: 8px;
+	}
+
+	&__name {
+		font-size: 15px;
+		line-height: 1.4;
+	}
+
+	&__position {
+		font-family: 'Roboto Mono';
+		font-size: 12px;
+		line-height: 1.4;
+		color: $accent-color;
+	}
+
+	&__image {
+		align-self: center;
+
+		grid-row: 1;
+
+		border-radius: 30px;
+		overflow: clip;
+
+		aspect-ratio: 590 / 669;
+		object-fit: cover;
+		@media (max-width: 767.98px) {
+			display: none;
+		}
+	}
+}

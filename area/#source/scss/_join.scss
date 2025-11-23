@@ -1,0 +1,33 @@
+.page {
+	&__join {
+		margin-bottom: 120px;
+	}
+}
+.join {
+	&__container {
+	}
+
+	&__hero-content {
+		border-top: 1px solid $gray-color;
+	}
+	.hero-content--center-text {
+		.hero-content {
+			&__body {
+				align-self: center;
+				border-top: none;
+			}
+
+			&__title {
+			}
+
+			&__text {
+				max-width: 600px;
+				align-self: center;
+			}
+
+			&__button {
+				max-width: 600px;
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.page {
+	&__trusted {
+	}
+}
+.trusted {
+	&__container {
+		display: flex;
+		flex-direction: column;
+
+		row-gap: 50px;
+		margin-top: 50px;
+		margin-bottom: 70px;
+	}
+
+	&__label {
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		column-gap: 20px;
+		row-gap: 30px;
+	}
+
+	&__item {
+	}
+}

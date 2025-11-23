@@ -1,0 +1,145 @@
+// Шрифти -------------------------------------------
+.logo {
+	font-size: 1.875rem;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: -2px;
+}
+
+// Шрифти -------------------------------------------
+.link {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background-color: $text-black-color;
+
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 0.3s ease-in-out;
+	}
+	@media (any-hover: hover) {
+		&:hover::before {
+			transform: scaleX(1);
+		}
+		&:not(:hover)::before {
+			transform: scaleX(0);
+			transform-origin: right;
+		}
+	}
+}
+// Шрифти -------------------------------------------
+.button {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.4;
+	letter-spacing: -1px;
+	text-wrap: nowrap;
+
+	background-color: $green-color;
+	padding: 14px 22px;
+	border-radius: 30px;
+
+	transition: background 0.4s ease-in-out;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $accent-color;
+		}
+	}
+}
+
+.button--black-text {
+	color: $text-black-color;
+}
+
+// Шрифти -------------------------------------------
+
+.label {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.4;
+	color: $accent-color;
+}
+.label--gray {
+	color: $text-color;
+}
+
+.page {
+	&__container {
+	}
+}
+.hero-content {
+	&__body {
+		display: flex;
+		flex-direction: column;
+		border-top: 1px solid rgba(233, 233, 233, 1);
+		padding-top: 80px;
+
+		row-gap: 40px;
+		@media (max-width: 424.98px) {
+			row-gap: 30px;
+		}
+	}
+	&__label {
+	}
+
+	&__title {
+		font-family: (Crimson Text);
+		font-size: 60px;
+		line-height: 0.9;
+		letter-spacing: -2px;
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 1.4;
+		color: $text-color;
+	}
+}
+.body-hero-content--large-indent {
+	display: flex;
+	flex-direction: column;
+
+	row-gap: 50px;
+	@media (max-width: 424.98px) {
+		row-gap: 30px;
+	}
+}
+.hero-content--center-text {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+	.hero-content {
+		&__body {
+			align-self: center;
+		}
+
+		&__title {
+		}
+
+		&__text {
+			max-width: 600px;
+			align-self: center;
+		}
+
+		&__button {
+			max-width: 600px;
+		}
+	}
+}
+.hero-content--inline {
+	.hero-content__body {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 15px;
+	}
+}
+.title {
+}

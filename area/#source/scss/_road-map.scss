@@ -1,0 +1,78 @@
+.page {
+	&__road-map {
+		margin-bottom: 160px;
+	}
+}
+.road-map {
+	&__container {
+	}
+
+	&__hero-content {
+		&:not(:last-child) {
+			margin-bottom: 80px;
+		}
+	}
+
+	&__steps {
+		&:not(:last-child) {
+			margin-bottom: 120px;
+		}
+	}
+
+	&__image {
+		height: 644px;
+		border-radius: 30px;
+
+		overflow: clip;
+
+		aspect-ratio: 1200 / 664;
+		object-fit: cover;
+	}
+	.hero-content {
+		&__body {
+			@media (max-width: 767.98px) {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+		}
+	}
+}
+
+.steps-road-map {
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 20px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+
+		border-top: 1px solid $gray-color;
+		padding-top: 60px;
+		padding-right: 30px;
+	}
+
+	&__num {
+		font-size: 80px;
+		letter-spacing: -5px;
+		color: $text-color;
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
+	}
+
+	&__title {
+		font-family: 'Crimson Text';
+		font-size: 18px;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__description {
+		color: $text-color;
+		line-height: 1.4;
+	}
+}

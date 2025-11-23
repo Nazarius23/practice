@@ -1,0 +1,81 @@
+.page {
+	&__hero {
+		@media (max-width: 767.98px) {
+			margin-top: 42px;
+		}
+	}
+}
+.hero {
+	&__container {
+		display: flex;
+		flex-direction: column;
+
+		row-gap: 100px;
+		@media (max-width: 767.98px) {
+			display: grid;
+
+			row-gap: 70px;
+		}
+	}
+
+	&__title {
+		font-family: 'Crimson Text';
+		font-size: clamp(77px, 16vw, 160px);
+
+		line-height: 90%;
+		letter-spacing: -6.5px;
+		text-align: center;
+		@media (max-width: 767.98px) {
+		}
+	}
+
+	&__image {
+		overflow: clip;
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		justify-content: center;
+		padding: 0 24px;
+
+		@media (max-width: 767.98px) {
+			padding: 0 11px;
+		}
+		@media (max-width: 424.98px) {
+			align-items: normal;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: 1;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			min-height: 362px;
+			border-radius: 30px;
+			background-color: $green-color;
+		}
+		@media (max-width: 767.98px) {
+			height: 422px;
+		}
+	}
+
+	&__img {
+		position: relative;
+		z-index: 2;
+		margin-bottom: -11.2%;
+
+		display: inline-block;
+
+		width: 907px;
+		min-height: 100%;
+
+		object-fit: contain;
+		object-position: top;
+		@media (max-width: 424.98px) {
+			margin-bottom: clamp(-50px, 15vw, -141px);
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

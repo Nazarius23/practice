@@ -1,0 +1,49 @@
+//-------------------Палітра кольорів----------------
+
+$gray-color: rgba(233, 233, 233, 1);
+$text-color: rgba(111, 111, 111, 1);
+$text-black-color: #000;
+$green-color: rgba(142, 156, 120, 1);
+$accent-color: rgba(72, 92, 17, 1);
+//--------------------------------------------------
+
+//===================================================
+
+@import '_reset';
+@import '_components';
+@import '_button';
+@import '_header';
+@import '_menu-burger';
+@import '_hero';
+@import '_benefits';
+@import '_trusted';
+@import '_about';
+@import '_services';
+@import '_review';
+@import '_road-map';
+@import '_join';
+@import '_footer';
+
+//===================================================
+
+body {
+	//----------------підключення шрифту--------------
+	font-family: 'DM Sans', sans-serif;
+	//----------------налаштування шрифту-------------
+	font-size: 15px;
+	color: $text-black-color;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+// ==============Обмежуючий контейнер==============
+
+[class*='__container'] {
+	max-width: 1230px;
+	padding-inline: 15px;
+	margin-inline: auto;
+}
+// ===============================================
