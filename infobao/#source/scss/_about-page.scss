@@ -1,0 +1,58 @@
+.header {
+	&__container {
+	}
+
+	&__logo {
+	}
+
+	&__menu {
+	}
+}
+
+.menu--black {
+	color: #000;
+	@media (max-width: 767.98px) {
+		color: #fff;
+	}
+}
+
+.page {
+	&__about {
+		margin-top: clamp(80px, 10vw, 212px);
+		margin-bottom: clamp(80px, 10vw, 108px);
+	}
+}
+
+.about-page {
+	&__container {
+		border-top: 1px solid #727070;
+		border-bottom: 1px solid #727070;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		row-gap: clamp(40px, 10vw, 96px);
+
+		padding-top: clamp(40px, 10vw, 71px);
+		padding-bottom: clamp(40px, 10vw, 146px);
+
+		max-width: 740px;
+		margin: 0 auto;
+	}
+
+	&__title {
+	}
+
+	&__text {
+	}
+
+	&__signature {
+	}
+}
+.title {
+}
+.title--small {
+}
