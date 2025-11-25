@@ -1,0 +1,137 @@
+// button -------------------------------------------
+.button {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+
+	line-height: 1.23;
+	letter-spacing: 2px;
+
+	column-gap: 0.625rem;
+
+	padding: 1rem;
+
+	transition: background 0.3s ease-in-out;
+
+	span {
+		position: relative;
+		display: inline-block;
+		width: 1rem;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			width: 100%;
+			height: 0.0625rem;
+			background-color: #000;
+			transition: transform 0.3s ease-in-out, height 0.3s ease-out;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			width: 100%;
+			height: 0.0625rem;
+			background-color: #000;
+			transition: transform 0.3s ease-in-out, height 0.3s ease-out;
+		}
+	}
+	@media (any-hover: hover) {
+		&:hover span::before {
+			transform: rotate(90deg);
+			height: 0.125rem;
+		}
+		&:hover span::after {
+			transform: rotate(180deg);
+			height: 0.125rem;
+			transition: transform 0.5s ease-in-out;
+		}
+	}
+}
+.button--header {
+	@media (max-width: 535px) {
+		padding: 10px 10px;
+		background-color: rgba(210, 246, 90, 0.5);
+	}
+	span {
+		@media (max-width: 535px) {
+			display: none;
+			padding: 0;
+		}
+	}
+}
+.button--grean {
+	color: #000;
+	background-color: #d2f65a;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #a8c548;
+		}
+		&:active {
+			transition: background 0s ease-in-out;
+			background-color: #daff5f;
+		}
+	}
+}
+.button--black {
+}
+// scrolling-text -------------------------------------------
+.hero {
+	&__scrolling-text {
+	}
+}
+.scrolling-text {
+	overflow: hidden;
+	white-space: nowrap;
+	&__wrapper {
+		display: inline-flex;
+		animation: marquee 25s linear infinite;
+		span {
+			padding-right: 10px;
+		}
+	}
+	&__inner {
+		display: flex;
+		// gap: 0.625rem;
+	}
+	@keyframes marquee {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(-50%);
+		}
+	}
+}
+.scrolling-text--grean {
+	padding: 16px 0;
+	background-color: rgba(210, 247, 90, 1);
+	line-height: 1.08;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+// title -------------------------------------------
+
+.title {
+	text-transform: uppercase;
+	line-height: 1.2; /* 96/80 */
+}
+.title--medium {
+	font-size: 80px;
+	font-size: clamp(45px, 8vw, 80px);
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 1px;
+}
+.title--big {
+	font-size: 112px;
+	font-size: clamp(45px, 8vw, 120px);
+	line-height: 1.2;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}

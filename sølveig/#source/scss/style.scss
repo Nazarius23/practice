@@ -1,0 +1,37 @@
+//===================================================
+
+@import '_reset';
+@import '_fonts';
+@import '_components';
+@import '_header';
+@import '_hero';
+@import '_clients';
+@import '_brand';
+@import '_example';
+@import '_work';
+@import '_footer';
+
+//===================================================
+
+body {
+	//----------------підключення шрифту--------------
+	font-family: 'ClashDisplay-Medium', sans-serif;
+	font-weight: 500;
+	//----------------налаштування шрифту-------------
+	font-size: 0.8125rem;
+	color: #000000;
+	background-color: #fff;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+// ==============Обмежуючий контейнер==============
+
+[class*='__container'] {
+	max-width: 1890px;
+	padding-inline: 15px;
+	margin-inline: auto;
+}
+// ===============================================

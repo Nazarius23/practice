@@ -1,0 +1,52 @@
+.page {
+	&__example {
+		margin-bottom: 96px;
+	}
+}
+.example {
+	&__container {
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 16px;
+	}
+	&__item:hover &__image {
+		padding: 8px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+
+		row-gap: 16px;
+	}
+
+	&__image {
+		padding: 0;
+		aspect-ratio: 904 / 900;
+		object-fit: cover;
+		background-color: #d2f65a;
+
+		transition: padding 0.5s ease-in-out;
+	}
+
+	&__product {
+		display: flex;
+		flex-direction: column;
+
+		row-gap: 8px;
+
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 1.2;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		span {
+			color: rgba(25, 25, 25, 0.7);
+			font-size: 13px;
+			line-height: 1.2;
+		}
+	}
+}
