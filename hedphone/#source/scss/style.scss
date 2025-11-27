@@ -1,0 +1,29 @@
+//===================================================
+
+@import '_reset';
+@import '_components';
+@import '_button';
+@import '_page';
+
+//===================================================
+
+body {
+	//----------------підключення шрифту--------------
+	font-family: 'Poppins', sans-serif;
+	//----------------налаштування шрифту-------------
+	font-size: 16px;
+	color: #fff;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+// ==============Обмежуючий контейнер==============
+
+[class*='__container'] {
+	max-width: 1820px;
+	padding-inline: 15px;
+	margin-inline: auto;
+}
+// ===============================================
