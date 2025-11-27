@@ -6,7 +6,7 @@
 	&__container {
 		display: flex;
 		flex-direction: column;
-		row-gap: 90px;
+		row-gap: 5.625rem;
 	}
 
 	&__hero-content {
@@ -17,11 +17,11 @@
 
 	&__img {
 		width: 100%;
-		height: 600px;
+		height: 37.5rem;
 		aspect-ratio: 1200 / 620;
 		object-fit: cover;
 		object-position: center;
-		border-radius: 30px;
+		border-radius: 1.875rem;
 		@media (max-width: 424.98px) {
 			aspect-ratio: 1 / 1;
 			height: auto;
@@ -34,8 +34,8 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
-		column-gap: 40px;
-		row-gap: 20px;
+		column-gap: 2.5rem;
+		row-gap: 1.25rem;
 		@media (max-width: 424.98px) {
 			grid-template-rows: repeat(1fr);
 		}
@@ -46,26 +46,26 @@
 		grid-template-rows: repeat(auto);
 
 		border-top: 1px solid rgba(233, 233, 233, 1);
-		padding-top: 40px;
+		padding-top: 2.5rem;
 	}
 
 	&__img {
 		&:not(:last-child) {
-			margin-bottom: 24px;
+			margin-bottom: 1.5rem;
 		}
 	}
 
 	&__title {
 		font-family: ('Crimson Text');
-		font-size: 18px;
+		font-size: 1.125rem;
 
 		&:not(:last-child) {
-			margin-bottom: 20px;
+			margin-bottom: 1.25rem;
 		}
 	}
 
 	&__text {
-		font-size: 15px;
+		font-size: 0.9375rem;
 		line-height: 1.4;
 		color: $text-color;
 	}

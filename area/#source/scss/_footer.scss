@@ -6,16 +6,16 @@
 		text-align: center;
 		align-items: center;
 
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
 	}
 
 	&__image {
 		display: inline-block;
-		height: 70px;
-		width: 35px;
+		height: 4.375rem;
+		width: 2.1875rem;
 		&:not(:last-child) {
-			margin-bottom: 20px;
+			margin-bottom: 1.25rem;
 		}
 	}
 
@@ -25,7 +25,7 @@
 .footre {
 	&__menu {
 		&:not(:last-child) {
-			margin-bottom: 80px;
+			margin-bottom: 5rem;
 		}
 	}
 }
@@ -37,11 +37,11 @@
 		display: flex;
 		flex-wrap: wrap;
 
-		column-gap: 27px;
-		row-gap: 10px;
+		column-gap: 1.6875rem;
+		row-gap: 0.625rem;
 		@media (max-width: 767.98px) {
 			flex-direction: column;
-			row-gap: 35px;
+			row-gap: 2.1875rem;
 		}
 	}
 
@@ -49,12 +49,12 @@
 	}
 
 	&__link {
-		font-size: 14px;
+		font-size: 0.875rem;
 		font-weight: 700;
 		line-height: 1.4;
 		letter-spacing: -1px;
 		@media (max-width: 767.98px) {
-			font-size: 30px;
+			font-size: 1.875rem;
 		}
 	}
 }

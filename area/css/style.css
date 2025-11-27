@@ -73,7 +73,7 @@ cite {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 1px;
+  height: 0.0625rem;
   background-color: #000;
   transform: scaleX(0);
   transform-origin: left;
@@ -91,14 +91,14 @@ cite {
 
 .button {
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: -1px;
   text-wrap: nowrap;
   background-color: rgb(142, 156, 120);
-  padding: 14px 22px;
-  border-radius: 30px;
+  padding: 0.875rem 1.375rem;
+  border-radius: 1.875rem;
   transition: background 0.4s ease-in-out;
 }
 @media (any-hover: hover) {
@@ -112,7 +112,7 @@ cite {
 }
 
 .label {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.4;
   color: rgb(72, 92, 17);
@@ -126,22 +126,22 @@ cite {
   display: flex;
   flex-direction: column;
   border-top: 1px solid rgb(233, 233, 233);
-  padding-top: 80px;
+  padding-top: 5rem;
   row-gap: 40px;
 }
 @media (max-width: 424.98px) {
   .hero-content__body {
-    row-gap: 30px;
+    row-gap: 1.875rem;
   }
 }
 .hero-content__title {
   font-family: Crimson Text;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 0.9;
   letter-spacing: -2px;
 }
 .hero-content__text {
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.4;
   color: rgb(111, 111, 111);
 }
@@ -149,11 +149,11 @@ cite {
 .body-hero-content--large-indent {
   display: flex;
   flex-direction: column;
-  row-gap: 50px;
+  row-gap: 3.125rem;
 }
 @media (max-width: 424.98px) {
   .body-hero-content--large-indent {
-    row-gap: 30px;
+    row-gap: 1.875rem;
   }
 }
 
@@ -166,7 +166,7 @@ cite {
   align-self: center;
 }
 .hero-content--center-text .hero-content__text {
-  max-width: 600px;
+  max-width: 37.5rem;
   align-self: center;
 }
 .hero-content--center-text .hero-content__button {
@@ -177,8 +177,8 @@ cite {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  -moz-column-gap: 0.9375rem;
+       column-gap: 0.9375rem;
 }
 
 .header {
@@ -189,9 +189,9 @@ cite {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  min-height: 76px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  min-height: 4.75rem;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
 }
 @media (max-width: 767.98px) {
   .header__container {
@@ -209,18 +209,18 @@ cite {
 .header__button {
   position: relative;
   z-index: 3;
-  max-width: 127px;
+  max-width: 7.9375rem;
   text-align: center;
 }
 .menu__list {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 27px;
-       column-gap: 27px;
-  row-gap: 10px;
+  -moz-column-gap: 1.6875rem;
+       column-gap: 1.6875rem;
+  row-gap: 0.625rem;
 }
 .menu__link {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: -1px;
@@ -239,7 +239,7 @@ cite {
     height: 100%;
     background-color: rgb(142, 156, 120);
     border-left: 2px solid rgb(72, 92, 17);
-    padding: 176px 10px 150px 30px;
+    padding: 11rem 0.625rem 9.375rem 1.875rem;
     transition: right 0.8s ease-in-out;
   }
   .menu__list {
@@ -247,7 +247,7 @@ cite {
     row-gap: 1.5625rem;
   }
   .menu__link {
-    font-size: 38px;
+    font-size: 2.375rem;
   }
   .open-menu .menu__body {
     right: 0;
@@ -255,16 +255,16 @@ cite {
   .icon-menu {
     position: relative;
     display: block;
-    width: 18px;
-    height: 12px;
-    margin: 3px;
+    width: 1.125rem;
+    height: 0.75rem;
+    margin: 0.1875rem;
   }
   .icon-menu::before, .icon-menu span, .icon-menu::after {
     content: "";
     position: absolute;
     right: 0;
     width: 100%;
-    height: 2px;
+    height: 0.125rem;
     background-color: #000;
     transition: all 0.3s ease-in-out;
   }
@@ -294,24 +294,24 @@ cite {
   .menu__body {
     width: 100%;
     height: 100%;
-    padding: 176px 10px 150px 30px;
+    padding: 11rem 0.625rem 9.375rem 1.875rem;
   }
 }
 @media (max-width: 767.98px) {
   .page__hero {
-    margin-top: 42px;
+    margin-top: 2.625rem;
   }
 }
 
 .hero__container {
   display: flex;
   flex-direction: column;
-  row-gap: 100px;
+  row-gap: 6.25rem;
 }
 @media (max-width: 767.98px) {
   .hero__container {
     display: grid;
-    row-gap: 70px;
+    row-gap: 4.375rem;
   }
 }
 .hero__title {
@@ -327,11 +327,11 @@ cite {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 24px;
+  padding: 0 1.5rem;
 }
 @media (max-width: 767.98px) {
   .hero__image {
-    padding: 0 11px;
+    padding: 0 0.6875rem;
   }
 }
 @media (max-width: 424.98px) {
@@ -346,13 +346,13 @@ cite {
   bottom: 0;
   left: 0;
   width: 100%;
-  min-height: 362px;
-  border-radius: 30px;
+  min-height: 22.625rem;
+  border-radius: 1.875rem;
   background-color: rgb(142, 156, 120);
 }
 @media (max-width: 767.98px) {
   .hero__image {
-    height: 422px;
+    height: 26.375rem;
   }
 }
 .hero__img {
@@ -360,7 +360,7 @@ cite {
   z-index: 2;
   margin-bottom: -11.2%;
   display: inline-block;
-  width: 907px;
+  width: 56.6875rem;
   min-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -379,17 +379,17 @@ cite {
 .benefits__container {
   display: flex;
   flex-direction: column;
-  row-gap: 90px;
+  row-gap: 5.625rem;
 }
 .benefits__img {
   width: 100%;
-  height: 600px;
+  height: 37.5rem;
   aspect-ratio: 1200/620;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border-radius: 30px;
+  border-radius: 1.875rem;
 }
 @media (max-width: 424.98px) {
   .benefits__img {
@@ -401,9 +401,9 @@ cite {
 .list-benefits__body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-  row-gap: 20px;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+  row-gap: 1.25rem;
 }
 @media (max-width: 424.98px) {
   .list-benefits__body {
@@ -414,20 +414,20 @@ cite {
   display: grid;
   grid-template-rows: repeat(auto);
   border-top: 1px solid rgb(233, 233, 233);
-  padding-top: 40px;
+  padding-top: 2.5rem;
 }
 .list-benefits__img:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 .list-benefits__title {
   font-family: "Crimson Text";
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .list-benefits__title:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .list-benefits__text {
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.4;
   color: rgb(111, 111, 111);
 }
@@ -435,50 +435,50 @@ cite {
 .trusted__container {
   display: flex;
   flex-direction: column;
-  row-gap: 50px;
-  margin-top: 50px;
-  margin-bottom: 70px;
+  row-gap: 3.125rem;
+  margin-top: 3.125rem;
+  margin-bottom: 4.375rem;
 }
 .trusted__list {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  row-gap: 30px;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  row-gap: 1.875rem;
 }
 .page__about {
-  margin-top: 120px;
-  margin-bottom: 200px;
+  margin-top: 7.5rem;
+  margin-bottom: 12.5rem;
 }
 
 .about__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 @media (max-width: 767.98px) {
   .about__container {
     grid-template-columns: auto;
     grid-template-rows: repeat(1fr);
-    row-gap: 68px;
+    row-gap: 4.25rem;
   }
 }
 .about__content {
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 2.5rem;
 }
 .about__item {
   display: flex;
   align-items: center;
   align-self: flex-start;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  padding-block: 20px;
-  padding-inline-end: 80px;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
+  padding-block: 1.25rem;
+  padding-inline-end: 5rem;
   border-top: 1px solid rgb(233, 233, 233);
 }
 @media (max-width: 767.98px) {
@@ -487,7 +487,7 @@ cite {
   }
 }
 .about__value {
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.4;
   font-weight: 500;
   color: rgb(111, 111, 111);
@@ -515,13 +515,13 @@ cite {
 }
 
 .page__services {
-  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
 }
 
 .services__container {
   display: flex;
   flex-direction: column;
-  row-gap: 114px;
+  row-gap: 7.125rem;
 }
 .services__list {
   display: flex;
@@ -535,7 +535,7 @@ cite {
 .list-services__column {
   flex: 1 1 33.333%;
   overflow: clip;
-  min-width: 240px;
+  min-width: 15rem;
   outline: 1px solid transparent;
   border-radius: 0;
   transition: box-shadow 0.3s ease-in-out, outline 0.3s ease-in-out, border-radius 0.3s ease-in-out;
@@ -544,18 +544,18 @@ cite {
   .list-services__column:hover {
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.08);
     outline: 1px solid rgb(233, 233, 233);
-    border-radius: 20px;
+    border-radius: 1.25rem;
   }
 }
 .list-services__title {
   text-align: center;
   font-family: "Crimson Text";
-  font-size: 23px;
+  font-size: 1.4375rem;
   line-height: 1.2;
   font-weight: 600;
   letter-spacing: -1.1px;
   color: rgb(111, 111, 111);
-  padding: 40px 0 25px;
+  padding: 2.5rem 0 1.5625rem;
   transition: color 0.3s ease-in-out;
 }
 .list-services__items {
@@ -564,14 +564,14 @@ cite {
 .list-services__item {
   display: flex;
   align-items: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
   border-bottom: 1px solid rgb(233, 233, 233);
-  padding: 32px 0 32px 20px;
+  padding: 2rem 0 2rem 1.25rem;
 }
 .list-services__text {
   font-family: "Roboto Mono";
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.4;
 }
 
@@ -581,14 +581,14 @@ cite {
   }
 }
 .page__review {
-  margin-bottom: 165px;
+  margin-bottom: 10.3125rem;
 }
 
 .review__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 @media (max-width: 767.98px) {
   .review__container {
@@ -600,21 +600,21 @@ cite {
   border-top: 1px solid rgb(233, 233, 233);
 }
 .review__wrapper {
-  padding-top: 42px;
+  padding-top: 2.625rem;
   padding-left: clamp(20px, 2vw, 50px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: 50px;
+  row-gap: 3.125rem;
 }
 @media (max-width: 767.98px) {
   .review__wrapper {
-    padding: 40px 16px 0;
+    padding: 2.5rem 1rem 0;
   }
 }
 .review__quote {
   font-family: "Crimson Text";
-  font-size: 40px;
+  font-size: 2.5rem;
   letter-spacing: -1.4px;
 }
 @media (max-width: 424.98px) {
@@ -624,24 +624,24 @@ cite {
 }
 .review__author {
   display: flex;
-  align-items: center;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.5rem;
 }
 .review__name {
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.4;
 }
 .review__position {
   font-family: "Roboto Mono";
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.4;
   color: rgb(72, 92, 17);
 }
 .review__image {
   align-self: center;
   grid-row: 1;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   overflow: clip;
   aspect-ratio: 590/669;
   -o-object-fit: cover;
@@ -654,18 +654,18 @@ cite {
 }
 
 .page__road-map {
-  margin-bottom: 160px;
+  margin-bottom: 10rem;
 }
 
 .road-map__hero-content:not(:last-child) {
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 .road-map__steps:not(:last-child) {
-  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
 }
 .road-map__image {
-  height: 644px;
-  border-radius: 30px;
+  height: 40.25rem;
+  border-radius: 1.875rem;
   overflow: clip;
   aspect-ratio: 1200/664;
   -o-object-fit: cover;
@@ -681,29 +681,29 @@ cite {
 .steps-road-map__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 1.25rem;
 }
 .steps-road-map__item {
   display: flex;
   flex-direction: column;
   border-top: 1px solid rgb(233, 233, 233);
-  padding-top: 60px;
-  padding-right: 30px;
+  padding-top: 3.75rem;
+  padding-right: 1.875rem;
 }
 .steps-road-map__num {
-  font-size: 80px;
+  font-size: 5rem;
   letter-spacing: -5px;
   color: rgb(111, 111, 111);
 }
 .steps-road-map__num:not(:last-child) {
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 .steps-road-map__title {
   font-family: "Crimson Text";
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .steps-road-map__title:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .steps-road-map__description {
   color: rgb(111, 111, 111);
@@ -711,7 +711,7 @@ cite {
 }
 
 .page__join {
-  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
 }
 
 .join__hero-content {
@@ -722,11 +722,11 @@ cite {
   border-top: none;
 }
 .join .hero-content--center-text .hero-content__text {
-  max-width: 600px;
+  max-width: 37.5rem;
   align-self: center;
 }
 .join .hero-content--center-text .hero-content__button {
-  max-width: 600px;
+  max-width: 37.5rem;
 }
 
 .footer__container {
@@ -735,43 +735,43 @@ cite {
   border-top: 1px solid rgb(233, 233, 233);
   text-align: center;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .footer__image {
   display: inline-block;
-  height: 70px;
-  width: 35px;
+  height: 4.375rem;
+  width: 2.1875rem;
 }
 .footer__image:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .footre__menu:not(:last-child) {
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 
 .menu-footre__list {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 27px;
-       column-gap: 27px;
-  row-gap: 10px;
+  -moz-column-gap: 1.6875rem;
+       column-gap: 1.6875rem;
+  row-gap: 0.625rem;
 }
 @media (max-width: 767.98px) {
   .menu-footre__list {
     flex-direction: column;
-    row-gap: 35px;
+    row-gap: 2.1875rem;
   }
 }
 .menu-footre__link {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: -1px;
 }
 @media (max-width: 767.98px) {
   .menu-footre__link {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 

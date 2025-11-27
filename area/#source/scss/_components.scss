@@ -15,7 +15,7 @@
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		height: 1px;
+		height: 0.0625rem;
 		background-color: $text-black-color;
 
 		transform: scaleX(0);
@@ -35,15 +35,15 @@
 // Шрифти -------------------------------------------
 .button {
 	color: #fff;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 700;
 	line-height: 1.4;
 	letter-spacing: -1px;
 	text-wrap: nowrap;
 
 	background-color: $green-color;
-	padding: 14px 22px;
-	border-radius: 30px;
+	padding: 0.875rem 1.375rem;
+	border-radius: 1.875rem;
 
 	transition: background 0.4s ease-in-out;
 	@media (any-hover: hover) {
@@ -60,7 +60,7 @@
 // Шрифти -------------------------------------------
 
 .label {
-	font-size: 12px;
+	font-size: 0.75rem;
 	font-weight: 400;
 	line-height: 1.4;
 	color: $accent-color;
@@ -78,11 +78,11 @@
 		display: flex;
 		flex-direction: column;
 		border-top: 1px solid rgba(233, 233, 233, 1);
-		padding-top: 80px;
+		padding-top: 5rem;
 
 		row-gap: 40px;
 		@media (max-width: 424.98px) {
-			row-gap: 30px;
+			row-gap: 1.875rem;
 		}
 	}
 	&__label {
@@ -90,13 +90,13 @@
 
 	&__title {
 		font-family: (Crimson Text);
-		font-size: 60px;
+		font-size: 3.75rem;
 		line-height: 0.9;
 		letter-spacing: -2px;
 	}
 
 	&__text {
-		font-size: 15px;
+		font-size: 0.9375rem;
 		line-height: 1.4;
 		color: $text-color;
 	}
@@ -105,9 +105,9 @@
 	display: flex;
 	flex-direction: column;
 
-	row-gap: 50px;
+	row-gap: 3.125rem;
 	@media (max-width: 424.98px) {
-		row-gap: 30px;
+		row-gap: 1.875rem;
 	}
 }
 .hero-content--center-text {
@@ -124,7 +124,7 @@
 		}
 
 		&__text {
-			max-width: 600px;
+			max-width: 37.5rem;
 			align-self: center;
 		}
 
@@ -138,7 +138,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		column-gap: 15px;
+		column-gap: 0.9375rem;
 	}
 }
 .title {
