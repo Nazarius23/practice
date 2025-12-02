@@ -1,0 +1,55 @@
+.button {
+	line-height: 168%;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: $back-color;
+}
+.button--black {
+	padding: 1.25rem 3.125rem;
+	color: #fff;
+	background-color: $back-color;
+
+	transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+	@media (any-hover: hover) {
+		&:hover {
+			color: $back-color;
+			background-color: #fff;
+		}
+	}
+}
+.button-arrow-decoration {
+	padding: 1.25rem 2rem;
+	display: inline-flex;
+	text-align: center;
+	align-items: center;
+	flex: 0 0 auto;
+
+	column-gap: 0.4375rem;
+	&::after {
+		content: '';
+		top: 0;
+		right: 0;
+		width: 1.125rem;
+		height: 0.625rem;
+
+		background: url('../../img/icons/arrow.svg') 0 50% no-repeat;
+
+		transition: transform 0.3s ease-in-out;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			&::after {
+				transform: translatex(0.3125rem);
+			}
+		}
+	}
+}
+.button-border-decoration {
+	border: 1px solid rgba(184, 184, 184, 1);
+	transition: border 0.3s ease-in-out;
+	@media (any-hover: hover) {
+		&:hover {
+			border: 1px solid $back-color;
+		}
+	}
+}

@@ -1,0 +1,121 @@
+.page {
+	&__faqs {
+		margin-bottom: 9.625rem;
+	}
+}
+.faqs {
+	&__container {
+	}
+
+	&__body {
+		max-width: 1415px;
+		margin: 0 auto;
+
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+
+		column-gap: clamp(30px, 7vw, 128px);
+
+		@media (max-width: $pc) {
+			grid-template-columns: auto;
+			grid-template-rows: repeat(2, auto);
+			row-gap: 40px;
+		}
+	}
+
+	&__main-content {
+	}
+
+	&__drop-list {
+		display: flex;
+		flex-direction: column;
+
+		row-gap: 35px;
+	}
+}
+
+.drop-list-faqs {
+	&__item {
+		max-width: 926px;
+		padding: 1.25rem 2.5rem;
+		cursor: pointer;
+
+		font-family: 'Rubik';
+		display: flex;
+		flex-direction: column;
+
+		row-gap: 10px;
+
+		border: 1px solid rgba(249, 249, 249, 1);
+		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.04);
+		background: rgba(255, 255, 255, 1);
+		@media (max-width: $pc) {
+			padding: 1.25rem 1.25rem;
+		}
+	}
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+
+		align-items: center;
+		column-gap: 15px;
+	}
+
+	&__title {
+		font-size: 30px;
+		line-height: 172%;
+		letter-spacing: -0.001em;
+		color: $back-color;
+		@media (max-width: $pc) {
+			font-size: 22px;
+		}
+		@media (max-width: $mobile) {
+			font-size: 18px;
+		}
+	}
+
+	&__button {
+		position: relative;
+		min-height: 20px;
+		min-width: 20px;
+		align-self: flex-start;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			height: 3px;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			background-color: $darck-gray-color;
+			border-radius: 10px;
+		}
+
+		&::before {
+			transform: rotate(0);
+			transition: transform 0.3s cubic-bezier(0.75, 0, 0.26, 0.97) 0.7s;
+			.open & {
+				transform: rotate(90deg);
+				transition: transform 0.3s cubic-bezier(0.75, 0, 0.26, 0.97) 0.7s;
+			}
+		}
+		&::after {
+			transform: rotate(90deg);
+		}
+		transition: transform 0.8s cubic-bezier(0.41, 1, 0.6, 0);
+
+		.open & {
+			transform: rotate(270deg);
+		}
+	}
+
+	&__text {
+		line-height: 212%;
+		letter-spacing: 0.002em;
+
+		height: 0;
+		overflow: hidden;
+		transition: height 0.8s cubic-bezier(0.77, 0, 0.22, 1);
+	}
+}
