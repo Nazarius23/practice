@@ -1,6 +1,10 @@
 .page {
 	&__services {
-		margin-bottom: clamp(120px, 10vw, 195px);
+		margin-bottom: 195px;
+
+		@media (max-width: 767.98px) {
+			margin-bottom: 120px;
+		}
 	}
 }
 .services {

@@ -1,6 +1,10 @@
 .page {
 	&__portfolio {
-		margin-bottom: clamp(120px, 10vw, 260px);
+		margin-bottom: 260px;
+
+		@media (max-width: 767.98px) {
+			margin-bottom: 120px;
+		}
 	}
 }
 .portfolio {

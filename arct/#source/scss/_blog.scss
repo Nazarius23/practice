@@ -2,6 +2,9 @@
 	&__blog {
 		&:not(:last-child) {
 			margin-bottom: 154px;
+			@media (max-width: 767.98px) {
+				margin-bottom: 120px;
+			}
 		}
 	}
 }

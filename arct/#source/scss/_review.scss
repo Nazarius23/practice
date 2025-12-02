@@ -1,6 +1,10 @@
 .page {
 	&__review {
-		margin-bottom: clamp(120px, 10vw, 193px);
+		margin-bottom: 193px;
+
+		@media (max-width: 767.98px) {
+			margin-bottom: 120px;
+		}
 	}
 }
 .review {
@@ -19,6 +23,7 @@
 
 		padding: 7.5rem 8.125rem 9.375rem 10rem;
 		margin-top: 8.3125rem;
+
 		background-color: #fff;
 
 		@media (max-width: $pc) {
@@ -32,7 +37,7 @@
 
 			background-color: rgba(255, 255, 255, 0.9);
 
-			margin-top: 0.9375rem;
+			margin: 0.9375rem 0;
 		}
 		@media (max-width: $mobile) {
 			padding: 1.875rem;

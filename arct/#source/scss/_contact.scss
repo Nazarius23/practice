@@ -29,6 +29,7 @@
 			margin-bottom: 0.9375rem;
 			background-color: rgba(255, 255, 255, 0.9);
 			row-gap: 2.5rem;
+			padding: 1.5625rem 20px;
 		}
 	}
 
@@ -47,7 +48,7 @@
 			column-gap: 0.9375rem;
 		}
 		@media (max-width: 550px) {
-			grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 			grid-template-rows: auto;
 		}
 		@media (max-width: $mobile) {
