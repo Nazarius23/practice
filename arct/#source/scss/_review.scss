@@ -18,7 +18,7 @@
 
 	&__content {
 		position: relative;
-		order: 2;
+		z-index: 3;
 		max-width: 895px;
 
 		padding: 7.5rem 8.125rem 9.375rem 10rem;
@@ -114,8 +114,8 @@
 	}
 
 	&__image {
-		order: 1;
 		position: absolute;
+		z-index: 2;
 		top: 0;
 		left: 0;
 		width: 64.6%;
