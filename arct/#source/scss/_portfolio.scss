@@ -41,6 +41,7 @@
 	}
 
 	&__item {
+		position: relative;
 		&:nth-child(1) {
 			grid-area: 1 / 1 / 3 / 3;
 			@media (max-width: 991.98px) {
@@ -61,10 +62,8 @@
 			}
 		}
 
-		& img {
-			height: 100%;
-			aspect-ratio: 395 / 282;
-			object-fit: cover;
+		img {
+			width: 100%;
 		}
 	}
 }

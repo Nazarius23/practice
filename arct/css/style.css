@@ -613,6 +613,7 @@ cite {
   }
 }
 .portfolio__item {
+  position: relative;
   transition: all 0.3s ease-in-out;
 }
 .portfolio__item:nth-child(1) {
@@ -638,10 +639,7 @@ cite {
   }
 }
 .portfolio__item img {
-  height: 100%;
-  aspect-ratio: 395/282;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
 }
 
 .header-portfolio__body {
@@ -901,7 +899,6 @@ cite {
   left: 0;
   width: 64.6%;
   height: 92%;
-  aspect-ratio: 1150/871;
   -o-object-fit: cover;
      object-fit: cover;
 }
