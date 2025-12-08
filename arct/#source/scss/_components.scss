@@ -133,3 +133,19 @@
 		}
 	}
 }
+
+.anim-left {
+	opacity: 0;
+	transform: translateX(-80px);
+	transition: all 0.8s ease-in-out;
+}
+.anim-right {
+	opacity: 0;
+	transform: translateX(80px);
+	transition: all 0.8s ease-in-out;
+}
+
+.anim-block.show {
+	opacity: 1;
+	transform: translateY(0);
+}

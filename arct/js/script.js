@@ -57,3 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 })
+/*========================================================*/
+const animBlocks = document.querySelectorAll('.anim-left, .anim-right, .anim-bottom')
+
+const observer = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('show')
+		}
+	})
+})
+
+animBlocks.forEach(block => observer.observe(block))
