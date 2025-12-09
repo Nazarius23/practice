@@ -58,6 +58,8 @@
 
 			transition: right 0.9s cubic-bezier(0.61, 0.32, 0.37, 0.81);
 
+			overflow-y: auto;
+
 			.open-menu & {
 				right: 0;
 			}
