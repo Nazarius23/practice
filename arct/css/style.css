@@ -657,10 +657,9 @@ cite {
   }
 }
 .portfolio__item img {
-  height: 100%;
+  aspect-ratio: 395/282;
   -o-object-fit: cover;
      object-fit: cover;
-  aspect-ratio: 395/282;
 }
 
 .header-portfolio__body {

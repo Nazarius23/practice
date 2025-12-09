@@ -62,11 +62,9 @@
 			}
 		}
 
-		img {
-			height: 100%;
-
-			object-fit: cover;
+		& img {
 			aspect-ratio: 395 / 282;
+			object-fit: cover;
 		}
 	}
 }
