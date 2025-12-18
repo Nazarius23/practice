@@ -22,6 +22,8 @@
 
 	&__content {
 		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
 
 		column-gap: clamp(30px, 4vw, 63px);
 		@media (max-width: $pc) {
@@ -42,7 +44,6 @@
 	}
 
 	&__img {
-		height: 100%;
 		aspect-ratio: 243 / 442;
 		object-fit: cover;
 
@@ -50,7 +51,6 @@
 
 		@media (max-width: $pc) {
 			aspect-ratio: 1 / 1;
-			height: none;
 		}
 	}
 
