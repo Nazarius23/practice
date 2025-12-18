@@ -23,7 +23,6 @@
 	&__content {
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-start;
 
 		column-gap: clamp(30px, 4vw, 63px);
 		@media (max-width: $pc) {
@@ -36,6 +35,8 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 1.4375rem;
+
+		align-self: stretch;
 
 		flex: 0 0 44.66%;
 		@media (max-width: $mobile) {
