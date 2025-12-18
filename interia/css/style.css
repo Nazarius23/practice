@@ -463,15 +463,23 @@ cite {
        column-gap: 1.4375rem;
   flex: 0 0 44.66%;
 }
+@media (max-width: 424.98px) {
+  .about__image {
+    -moz-column-gap: 0.625rem;
+         column-gap: 0.625rem;
+  }
+}
 .about__img {
   height: 100%;
+  aspect-ratio: 243/442;
   -o-object-fit: cover;
      object-fit: cover;
-  aspect-ratio: 243/442;
+  display: block;
 }
 @media (max-width: 991.98px) {
   .about__img {
     aspect-ratio: 1/1;
+    height: none;
   }
 }
 .about__information {

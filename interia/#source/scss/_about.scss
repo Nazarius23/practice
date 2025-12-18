@@ -36,16 +36,21 @@
 		column-gap: 1.4375rem;
 
 		flex: 0 0 44.66%;
+		@media (max-width: $mobile) {
+			column-gap: 0.625rem;
+		}
 	}
 
 	&__img {
 		height: 100%;
-
-		object-fit: cover;
 		aspect-ratio: 243 / 442;
+		object-fit: cover;
+
+		display: block;
 
 		@media (max-width: $pc) {
 			aspect-ratio: 1 / 1;
+			height: none;
 		}
 	}
 
