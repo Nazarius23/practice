@@ -1,0 +1,85 @@
+.page {
+	&__appeal {
+		padding-bottom: 3.125rem;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 50%;
+			background-color: $bgDarckColor;
+		}
+
+		@media (max-width: $tablet) {
+			padding-bottom: 2.5rem;
+		}
+	}
+}
+.appeal {
+	&__container {
+	}
+
+	&__body {
+		background-color: $darckGrayColor;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+
+		position: relative;
+		z-index: 3;
+
+		border-radius: 3.125rem 3.125rem 0 3.125rem;
+		overflow: clip;
+		column-gap: 0.9375rem;
+
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			align-items: normal;
+		}
+	}
+
+	&__image {
+		max-width: 22.8125rem;
+
+		aspect-ratio: 365 / 318;
+		object-fit: cover;
+		@media (max-width: $tablet) {
+			max-width: none;
+			aspect-ratio: 365 / 170;
+		}
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+
+	&__content {
+		flex: 0 1 39rem;
+
+		display: flex;
+		flex-direction: column;
+		row-gap: 1.875rem;
+		margin-right: 0.9375rem;
+		@media (max-width: $tablet) {
+			flex: none;
+			padding: 20px 35px;
+			margin-right: 0;
+		}
+		@media (max-width: $mobile) {
+			padding: 20px 25px;
+		}
+	}
+
+	&__title {
+	}
+
+	&__button {
+		align-self: flex-start;
+		@media (max-width: $mobile) {
+			align-self: center;
+		}
+	}
+}

@@ -1,0 +1,162 @@
+.page {
+	&__trust {
+		background-color: $bgDarckColor;
+
+		padding-top: 3.125rem;
+		padding-bottom: 6.25rem;
+		@media (max-width: $tablet) {
+			padding-top: 2.5rem;
+			padding-bottom: 3.125rem;
+		}
+	}
+}
+.trust {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		row-gap: 4.6875rem;
+		@media (max-width: $tablet) {
+			row-gap: 3.125rem;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 1.875rem;
+		@media (max-width: $pc) {
+			flex-direction: column;
+			row-gap: 4.6875rem;
+		}
+		@media (max-width: $tablet) {
+			row-gap: 3.125rem;
+		}
+	}
+
+	&__intro {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		row-gap: 4.625rem;
+		flex: 0 1 27.5rem;
+		@media (max-width: $tablet) {
+			row-gap: 30px;
+		}
+		@media (max-width: $mobile) {
+			flex: 0 1 auto;
+		}
+	}
+
+	&__header-content {
+	}
+
+	&__social-proof {
+		display: flex;
+		flex-direction: column;
+		row-gap: 1rem;
+	}
+
+	&__teams-preview {
+		// flex: 0 0 50.22%;
+		flex: 0 0 570px;
+		max-width: 570px;
+		align-self: center;
+	}
+
+	&__partners {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+		justify-content: space-between;
+		justify-items: center;
+	}
+}
+.trust__intro {
+	.header-content {
+		&__label {
+		}
+
+		&__title {
+			&:not(:last-child) {
+				margin-bottom: 1.6875rem;
+			}
+		}
+
+		&__text {
+		}
+	}
+}
+
+.social-proof {
+	&__avatars {
+		display: flex;
+	}
+
+	&__item {
+		& img {
+			max-width: 3.25rem;
+			box-sizing: border-box;
+			border: 0.1875rem solid rgba(18, 22, 22, 1);
+
+			border-radius: 50%;
+		}
+
+		&:not(:first-child) {
+			margin-left: -13px;
+		}
+	}
+
+	&__evaluation {
+		display: flex;
+		flex-direction: column;
+
+		row-gap: 0.6875rem;
+	}
+
+	&__value {
+		display: flex;
+		column-gap: 0.5rem;
+		align-items: center;
+	}
+	&__stra {
+	}
+	&__numerical-value {
+		font-family: 'Nunito';
+		line-height: 1.37;
+	}
+
+	&__label {
+	}
+}
+.teams-preview {
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+		align-items: center;
+		justify-items: start;
+		gap: 1.375rem;
+		@media (max-width: $tablet) {
+			justify-items: normal;
+		}
+	}
+
+	&__image {
+		object-fit: cover;
+		aspect-ratio: 274 / 274;
+		&:last-child {
+			border-radius: 0px 0px 50px 0px;
+			overflow: clip;
+		}
+	}
+
+	&__button {
+		text-wrap: nowrap;
+		text-align: center;
+	}
+}
+
+.partners-trust {
+	&__logo {
+	}
+}

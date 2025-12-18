@@ -1,0 +1,170 @@
+.header {
+	position: fixed;
+	top: 2rem;
+	right: 0;
+	width: 100%;
+	z-index: 50;
+	padding: 0.9375rem 0;
+
+	transition: top 0.5s ease 0.2s;
+
+	&__container {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+
+		align-items: center;
+		column-gap: 3.25rem;
+		@media (max-width: $pc) {
+			column-gap: 1.875rem;
+		}
+		@media (max-width: $tablet) {
+			grid-template-columns: repeat(3, auto);
+			column-gap: 0;
+		}
+	}
+
+	&__logo {
+		@media (max-width: $tablet) {
+			margin-right: 0.9375rem;
+		}
+	}
+
+	&__menu {
+	}
+
+	&__action {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		column-gap: 0.625rem;
+	}
+
+	&__button {
+		@media (max-width: $tablet) {
+			padding: 0.5rem 1.25rem;
+		}
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+
+	&__icon {
+	}
+}
+.header--bg {
+	background-color: rgba(25, 29, 29, 0.9);
+	top: 0;
+
+	transition: top 0.2s ease, background 0.2s ease;
+}
+.menu {
+	&__body {
+		@media (max-width: $tablet) {
+			position: fixed;
+			top: 0;
+			right: -100%;
+			width: 80%;
+			height: 100%;
+			padding: 8.75rem 3.125rem 6.25rem;
+
+			overflow-x: auto;
+
+			background-color: $bgDarckColor;
+
+			transition: right 0.9s ease-in-out;
+
+			.open-menu & {
+				right: 0;
+			}
+			@media (max-width: $mobile) {
+				padding: 8.75rem 0.9375rem 6.25rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				row-gap: 1.875rem;
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 3.4375rem;
+		align-items: center;
+
+		justify-content: flex-end;
+		@media (max-width: $pc) {
+			column-gap: 1.875rem;
+		}
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			row-gap: 1.875rem;
+		}
+	}
+
+	&__item {
+	}
+
+	&__link {
+		font-family: 'Nunito';
+		line-height: 1.37;
+		font-size: 1rem;
+		@media (max-width: $tablet) {
+			font-size: 1.75rem;
+		}
+	}
+
+	&__button {
+		display: none;
+		@media (max-width: $mobile) {
+			display: block;
+			align-self: center;
+			text-align: center;
+			padding: 0.5rem 0.9375rem;
+		}
+	}
+}
+
+.icon-menu {
+	display: none;
+	@media (max-width: $tablet) {
+		display: block;
+		position: relative;
+		z-index: 3;
+		width: 2.4375rem;
+		height: 2.4375rem;
+		outline: 1px solid $grayColor;
+		border-radius: 1.25rem;
+
+		transition: rotate 0.8s ease-in-out;
+
+		&::before,
+		& span,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 50%;
+			left: 25%;
+			height: 0.125rem;
+			background-color: #fff;
+		}
+
+		&::before {
+			top: 30%;
+		}
+		& span {
+			top: 50%;
+			transform: translateY(-50%);
+
+			transition: width 0.3s ease-in-out 0.8s;
+		}
+		&::after {
+			bottom: 30%;
+		}
+
+		.open-menu & {
+			rotate: 450deg;
+		}
+	}
+}

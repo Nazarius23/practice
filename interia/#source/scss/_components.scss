@@ -1,0 +1,124 @@
+// Шрифти -------------------------------------------
+.logo {
+	position: relative;
+	z-index: 50;
+	line-height: 1.5;
+	letter-spacing: 0.43em;
+	color: #ffff;
+}
+// Шрифти -------------------------------------------
+.item {
+}
+.item--animation {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 0.375rem;
+		height: 0.5625rem;
+
+		background: url('/img/icons/arrow.svg') 0 0 no-repeat;
+		transform: translateX(-50%) translateY(-200%) rotate(90deg);
+
+		opacity: 0;
+
+		transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+	}
+	@media (any-hover: hover) {
+		&:hover::before {
+			transform: translateX(-50%) translateY(-90%) rotate(90deg);
+			opacity: 1;
+		}
+	}
+}
+// Шрифти -------------------------------------------
+.button {
+	font-family: 'Kanit';
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 0.43em;
+
+	padding: 0.5rem 1.9375rem;
+	color: #ffff;
+
+	border: 0.0625rem solid rgba(109, 125, 125, 1);
+	border-radius: 6.25rem;
+	background: rgba(255, 255, 255, 0);
+
+	position: relative;
+	z-index: 3;
+
+	overflow: clip;
+
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: 2;
+		bottom: 0;
+		left: 0;
+		width: 18.75rem;
+		height: 12.5rem;
+
+		border-radius: 100%;
+
+		background: rgba(255, 255, 255, 0.2);
+
+		transform-origin: center;
+		transform: translateX(-92%) translateY(80%) rotate(-15deg);
+
+		transition: transform 0.5s ease-in-out;
+	}
+
+	@media (any-hover: hover) {
+		&:hover::before {
+			transform: translateX(-17%) translateY(43%) rotate(-15deg);
+		}
+	}
+}
+// Шрифти -------------------------------------------
+.label {
+	line-height: 1.5;
+	letter-spacing: 0.43em;
+	color: $grayColor;
+}
+// Шрифти -------------------------------------------
+.title {
+	font-family: 'Kanit';
+	font-size: 2.5rem;
+	line-height: 1.5;
+	font-weight: 400;
+
+	@media (max-width: $mobile) {
+		font-size: 28px;
+	}
+}
+.title--big {
+	font-size: 2.5rem;
+}
+.title--bold {
+	font-weight: 700;
+}
+// Шрифти -------------------------------------------
+.header-content {
+	&__label {
+	}
+	&__title {
+	}
+
+	&__text {
+		font-family: 'Nunito';
+		line-height: 1.37;
+		font-weight: 400;
+	}
+}
+.header-content--max-size {
+	max-width: 27.5rem;
+}
+.header-content--center {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}

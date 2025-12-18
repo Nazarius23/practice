@@ -1,0 +1,148 @@
+.page {
+	&__about {
+		margin-bottom: 6.25rem;
+		@media (max-width: $tablet) {
+			margin-bottom: 5rem;
+		}
+	}
+}
+.about {
+	&__container {
+		display: flex;
+		flex-direction: column;
+
+		row-gap: 4.6875rem;
+		@media (max-width: $tablet) {
+			row-gap: 2.5rem;
+		}
+	}
+
+	&__header-content {
+	}
+
+	&__content {
+		display: flex;
+
+		column-gap: clamp(30px, 4vw, 63px);
+		@media (max-width: $pc) {
+			flex-direction: column-reverse;
+			row-gap: 2.5rem;
+		}
+	}
+
+	&__image {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 1.4375rem;
+
+		flex: 0 0 44.66%;
+	}
+
+	&__img {
+		height: 100%;
+
+		object-fit: cover;
+		aspect-ratio: 243 / 442;
+
+		@media (max-width: $pc) {
+			aspect-ratio: 1 / 1;
+		}
+	}
+
+	&__information {
+		display: flex;
+		flex-direction: column;
+
+		row-gap: 3.5rem;
+
+		flex: 0 0 50.22%;
+
+		@media (max-width: $pc) {
+			max-width: 650px;
+		}
+		@media (max-width: $mobile) {
+			flex-direction: column-reverse;
+			align-items: center;
+			row-gap: 50px;
+		}
+	}
+}
+
+.information-about {
+	&__body {
+		display: flex;
+		justify-content: space-between;
+
+		column-gap: 0.625rem;
+	}
+
+	&__image {
+		object-fit: cover;
+		aspect-ratio: 243 / 243;
+
+		border-radius: 0px 3.125rem 0px 0px;
+		overflow: clip;
+
+		max-width: 15.1875rem;
+		@media (max-width: $pc) {
+			max-width: 350px;
+		}
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+
+	&__button {
+		align-self: flex-end;
+		text-align: center;
+		padding: 0.5rem 23px;
+		text-wrap: nowrap;
+	}
+
+	&__columns {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(125px, 125px));
+		justify-content: space-between;
+
+		@media (max-width: $mobile) {
+			grid-template-columns: repeat(1, auto);
+			justify-content: center;
+			justify-items: center;
+			text-align: center;
+			row-gap: 15px;
+		}
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__value {
+		font-size: 2.5rem;
+		line-height: 1.5;
+		color: $grayColor;
+	}
+
+	&__info {
+		line-height: 1.5;
+		letter-spacing: 0.43em;
+		@media (max-width: $mobile) {
+			letter-spacing: 0.22em;
+		}
+	}
+}
+
+.page__about {
+	.header-content {
+		&__title {
+			&:not(:last-child) {
+				margin-bottom: 1.25rem;
+			}
+		}
+
+		&__text {
+			max-width: 32rem;
+		}
+	}
+}

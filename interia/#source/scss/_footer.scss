@@ -1,0 +1,158 @@
+.footer {
+	background-color: $bgDarckColor;
+	&__container {
+		display: flex;
+		flex-direction: column;
+
+		padding: 7.9375rem 0 9.3125rem;
+		@media (max-width: $tablet) {
+			padding: 100px 0 110px;
+		}
+		@media (max-width: $mobile) {
+			padding: 4.375rem 0 4.375rem;
+		}
+	}
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+
+		align-items: center;
+		border-bottom: 1px solid $bgColor;
+		padding-bottom: 4.25rem;
+		column-gap: 0.9375rem;
+		@media (max-width: $tablet) {
+			flex-direction: column-reverse;
+			row-gap: 2.1875rem;
+		}
+	}
+
+	&__menu {
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 5.5rem;
+
+		column-gap: 0.9375rem;
+		@media (max-width: $tablet) {
+			flex-direction: column-reverse;
+			row-gap: 1.875rem;
+		}
+		@media (max-width: $mobile) {
+			margin-top: 3.125rem;
+		}
+	}
+
+	&__list {
+		display: flex;
+		column-gap: 1.25rem;
+	}
+
+	&__item {
+		width: 2.25rem;
+		height: 2.25rem;
+		outline: 0.0625rem solid $grayColor;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+
+		transition: background 0.4s ease-in-out;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.1);
+			}
+		}
+	}
+
+	&__link {
+		padding-bottom: 0.1875rem;
+	}
+
+	&__text {
+		max-width: 479px;
+		text-align: right;
+		font-family: 'Nunito';
+		line-height: 1.37;
+		@media (max-width: $tablet) {
+			text-align: center;
+		}
+	}
+
+	&__copyright {
+		background-color: $bgColor;
+	}
+}
+.menu-footer {
+	&__body {
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		column-gap: 3.4375rem;
+		row-gap: 1.25rem;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			row-gap: 1.875rem;
+		}
+	}
+
+	&__item {
+		@media (max-width: $mobile) {
+			text-align: center;
+		}
+	}
+
+	&__link {
+	}
+
+	&__logo {
+		z-index: 2;
+	}
+}
+
+.copyright-footer {
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		padding: 3.125rem 0;
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			row-gap: 1.875rem;
+			padding: 1.5625rem 0;
+		}
+	}
+
+	&__text {
+		line-height: 1.5;
+		text-align: center;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 5.75rem;
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			text-align: center;
+			row-gap: 15px;
+		}
+	}
+
+	&__item {
+		font-family: 'Kanit';
+		line-height: 1.5;
+		letter-spacing: 0.43em;
+		color: rgba(109, 125, 125, 1);
+	}
+
+	&__link {
+	}
+}
