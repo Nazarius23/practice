@@ -622,6 +622,7 @@ cite {
   -moz-column-gap: clamp(15px, 3vw, 60px);
        column-gap: clamp(15px, 3vw, 60px);
   row-gap: clamp(15px, 3vw, 50px);
+  align-items: stretch;
 }
 @media (max-width: 991.98px) {
   .portfolio__example {
@@ -632,6 +633,7 @@ cite {
 }
 .portfolio__item {
   position: relative;
+  aspect-ratio: 395/282;
   transition: all 0.3s ease-in-out;
 }
 .portfolio__item:nth-child(1) {
@@ -657,7 +659,11 @@ cite {
   }
 }
 .portfolio__item img {
-  aspect-ratio: 395/282;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
